@@ -9,11 +9,6 @@ h2, p {
   font-family: "Source Sans Pro"; }
 
 #full {
-  height: 100vh;
-  padding: 1em;
-  border-bottom: 1px dotted black; }
-
-#fullplus {
   padding: 1em;
   border-bottom: 1px dotted black;
   min-height: 100vh; }
