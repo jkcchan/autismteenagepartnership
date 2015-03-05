@@ -1,0 +1,70 @@
+body {
+  width: 80%;
+  margin: auto; }
+
+h1 {
+  font-family: "Droid Serif"; }
+
+h2, p {
+  font-family: "Source Sans Pro"; }
+
+#full {
+  height: 100vh;
+  padding: 1em;
+  border-bottom: 1px dotted black; }
+
+#fullplus {
+  padding: 1em;
+  border-bottom: 1px dotted black;
+  min-height: 100vh; }
+
+.home {
+  text-align: center; }
+  .home h1 {
+    margin-top: 30vh; }
+
+.abouttext {
+  padding-left: 3em;
+  padding-right: 3em; }
+
+.people {
+  list-style-type: none;
+  display: inline-block;
+  text-align: center; }
+  .people .person {
+    list-style-type: none;
+    display: inline-block;
+    width: 40%;
+    border: 1px dotted black;
+    padding: 1em;
+    margin: 1em;
+    text-align: left; }
+    .people .person li {
+      padding-left: 7.5em;
+      text-align: left; }
+  .people img {
+    float: left;
+    position: left;
+    height: 5.5em;
+    width: 5.5em; }
+
+.sponsorslist {
+  list-style-type: none;
+  padding-right: 40px;
+  margin: auto;
+  display: inline-block;
+  text-align: center; }
+  .sponsorslist .sponsor {
+    display: inline-block;
+    padding: 1em;
+    margin: 1em; }
+    .sponsorslist .sponsor img {
+      width: 15em;
+      height: 10em; }
+
+.contact {
+  text-align: center; }
+  .contact h1 {
+    margin-top: 30vh; }
+
+/*# sourceMappingURL=atp.css.map */
