@@ -1,5 +1,4 @@
 <!DOCTYPE html><html lang="en"><head><title>Autism Teenage Partnership</title><style>body {
-  width: 80%;
   margin: auto; }
 
 h1 {
@@ -8,17 +7,55 @@ h1 {
 h2, p {
   font-family: "Source Sans Pro"; }
 
-#full {
+.active {
+  border-bottom: 3px solid black;
+  background-color: #000000; }
+  .active h1 {
+    font-size: 12px; }
+
+.nav {
+  position: fixed;
+  width: 100vw;
+  height: 3em;
+  border-right: 1px dotted black;
+  background-color: #ffffff;
+  border-bottom: 1px solid #000088;
+  display: none; }
+  .nav .links {
+    list-style-type: none;
+    vertical-align: center;
+    display: inline-block;
+    float: right;
+    padding-right: 2em;
+    margin-bottom: 0.5em; }
+    .nav .links .jump {
+      text-align: none;
+      list-style-type: none;
+      vertical-align: center;
+      display: inline-block;
+      padding-left: 2em;
+      padding-right: 2em; }
+
+.even {
+  background-color: #fafafa; }
+
+.wrap {
+  opacity: 0;
+  width: 80%;
+  margin: auto; }
+
+.full {
   padding: 1em;
   border-bottom: 1px dotted black;
-  min-height: 100vh; }
+  min-height: 90vh; }
 
 .home {
+  opacity: 0;
   text-align: center; }
   .home h1 {
     margin-top: 30vh; }
 
-.abouttext {
+.about .abouttext {
   padding-left: 3em;
   padding-right: 3em; }
 
@@ -43,17 +80,17 @@ h2, p {
     height: 5.5em;
     width: 5.5em; }
 
-.sponsorslist {
+.sponsors .sponsorslist {
   list-style-type: none;
   padding-right: 40px;
   margin: auto;
   display: inline-block;
   text-align: center; }
-  .sponsorslist .sponsor {
+  .sponsors .sponsorslist .sponsor {
     display: inline-block;
     padding: 1em;
     margin: 1em; }
-    .sponsorslist .sponsor img {
+    .sponsors .sponsorslist .sponsor img {
       width: 15em;
       height: 10em; }
 
@@ -63,4 +100,4 @@ h2, p {
     margin-top: 30vh; }
 
 /*# sourceMappingURL=atp.css.map */
-</style><link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic|Source+Sans+Pro' rel='stylesheet' type='text/css'></head><body><div id="full" class="home"><h1>Autism Teenage Partnership</h1><p>Scroll down for more info!</p></div><div id="full" class="about"><h1>About us</h1><div class="abouttext"><h2>Initiative</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p><h2>History</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p><h2>Mission & Vision</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. .</p></div></div><div id="full" class="leadership"><h1>Leadership</h1><ul class="people"><div class="person"><h2>Jacob Chan, Candidate for BASc</h2><a href="https://linkedin.com/in/jacobchan5" target="_blank" title="Jacob Chan's Linkedin Profile"><img src="http://images.eonline.com/resize/66/66/eol_images/Entire_Site/20090501/300.cera.michael.050109.jpg"/></a><li><p>Position: Web Developer</p></li><li><p>Interests: cats Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p></li></div><div class="person"><h2>Jacob Chan, Candidate for BASc</h2><a href="https://linkedin.com/in/jacobchan5" target="_blank" title="Jacob Chan's Linkedin Profile"><img src="http://personalbranding101.com/wp-content/themes/thesis_18/thesis_18/lib/scripts/thumb.php?src=http%3A%2F%2Fpersonalbranding101.com%2Fwp-content%2Fuploads%2F2012%2F03%2FRon-Swanson-and-Productivity.jpg&amp;w=66&amp;h=66&amp;zc=1&amp;q=100"/></a><li><p>Position: Web Developer</p></li><li><p>Interests: cats Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p></li></div><div class="person"><h2>Jacob Chan, Candidate for BASc</h2><a href="https://linkedin.com/in/jacobchan5" target="_blank" title="Jacob Chan's Linkedin Profile"><img src="http://cdn.hoopshype.com/img/t/p/60x60/316/24838521.jpg"/></a><li><p>Position: Web Developer</p></li><li><p>Interests: cats Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p></li></div><div class="person"><h2>Jacob Chan, Candidate for BASc</h2><a href="https://linkedin.com/in/jacobchan5" target="_blank" title="Jacob Chan's Linkedin Profile"><img src="http://cdn.hoopshype.com/img/t/p/60x60/316/24838521.jpg"/></a><li><p>Position: Web Developer</p></li><li><p>Interests: cats Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p></li></div></ul></div><div id="full" class="sponsors"><h1>Sponsors</h1><ul class="sponsorslist"><div class="sponsor"><li><a href=https://google.ca target="_blank" title=jacob><img src=http://static.commentcamarche.net/es.kioskea.net/faq/images/6719-google-logo-3-s-.png/></a></li></div><div class="sponsor"><li><a href=https://google.ca target="_blank" title=jacob><img src=http://static.commentcamarche.net/es.kioskea.net/faq/images/6719-google-logo-3-s-.png/></a></li></div><div class="sponsor"><li><a href=https://google.ca target="_blank" title=jacob><img src=http://static.commentcamarche.net/es.kioskea.net/faq/images/6719-google-logo-3-s-.png/></a></li></div><div class="sponsor"><li><a href=https://google.ca target="_blank" title=jacob><img src=http://static.commentcamarche.net/es.kioskea.net/faq/images/6719-google-logo-3-s-.png/></a></li></div><div class="sponsor"><li><a href=https://google.ca target="_blank" title=jacob><img src=http://static.commentcamarche.net/es.kioskea.net/faq/images/6719-google-logo-3-s-.png/></a></li></div><div class="sponsor"><li><a href=https://google.ca target="_blank" title=jacob><img src=http://static.commentcamarche.net/es.kioskea.net/faq/images/6719-google-logo-3-s-.png/></a></li></div></ul></div><div id="full" class="contact"><h1>Connect with us!</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div></body></html>
+</style><link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic|Source+Sans+Pro' rel='stylesheet' type='text/css'><script src="https://code.jquery.com/jquery-1.11.2.min.js"></script><script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script><script src="main.js"></script></head><body><div class="nav"><ul class="links"><div class="jump"><li><a href=#home>#home</a></li></div><div class="jump"><li><a href=#about>#about</a></li></div><div class="jump"><li><a href=#leadership>#leadership</a></li></div><div class="jump"><li><a href=#sponsors>#sponsors</a></li></div><div class="jump"><li><a href=#contact>#contact</a></li></div></ul></div><div id="home" class="home full"><h1>Autism Teenage Partnership</h1><aboutp>Scroll down for more info!</aboutp></div><div id="about" class="about even full"><div class="wrap"><h1>About us</h1><div class="abouttext"><h2>Initiative</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p><h2>History</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p><h2>Mission & Vision</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. .</p></div></div></div><div id="leadership" class="leadership full"><div class="wrap"><h1>Leadership</h1><ul class="people"><div class="person"><h2>Jacob Chan, Candidate for BASc</h2><a href="https://linkedin.com/in/jacobchan5" target="_blank" title="Jacob Chan's Linkedin Profile"><img src="http://images.eonline.com/resize/66/66/eol_images/Entire_Site/20090501/300.cera.michael.050109.jpg"/></a><li><p>Position: Web Developer</p></li><li><p>Interests: cats Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p></li></div><div class="person"><h2>Jacob Chan, Candidate for BASc</h2><a href="https://linkedin.com/in/jacobchan5" target="_blank" title="Jacob Chan's Linkedin Profile"><img src="http://personalbranding101.com/wp-content/themes/thesis_18/thesis_18/lib/scripts/thumb.php?src=http%3A%2F%2Fpersonalbranding101.com%2Fwp-content%2Fuploads%2F2012%2F03%2FRon-Swanson-and-Productivity.jpg&amp;w=66&amp;h=66&amp;zc=1&amp;q=100"/></a><li><p>Position: Web Developer</p></li><li><p>Interests: cats Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p></li></div><div class="person"><h2>Jacob Chan, Candidate for BASc</h2><a href="https://linkedin.com/in/jacobchan5" target="_blank" title="Jacob Chan's Linkedin Profile"><img src="http://cdn.hoopshype.com/img/t/p/60x60/316/24838521.jpg"/></a><li><p>Position: Web Developer</p></li><li><p>Interests: cats Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p></li></div><div class="person"><h2>Jacob Chan, Candidate for BASc</h2><a href="https://linkedin.com/in/jacobchan5" target="_blank" title="Jacob Chan's Linkedin Profile"><img src="http://cdn.hoopshype.com/img/t/p/60x60/316/24838521.jpg"/></a><li><p>Position: Web Developer</p></li><li><p>Interests: cats Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p></li></div></ul></div></div><div id="sponsors" class="sponsors even full"><div class="wrap"><h1>Sponsors</h1><ul class="sponsorslist"><div class="sponsor"><li><a href=https://google.ca target="_blank" title=jacob><img src=http://static.commentcamarche.net/es.kioskea.net/faq/images/6719-google-logo-3-s-.png/></a></li></div><div class="sponsor"><li><a href=https://google.ca target="_blank" title=jacob><img src=http://static.commentcamarche.net/es.kioskea.net/faq/images/6719-google-logo-3-s-.png/></a></li></div><div class="sponsor"><li><a href=https://google.ca target="_blank" title=jacob><img src=http://static.commentcamarche.net/es.kioskea.net/faq/images/6719-google-logo-3-s-.png/></a></li></div><div class="sponsor"><li><a href=https://google.ca target="_blank" title=jacob><img src=http://static.commentcamarche.net/es.kioskea.net/faq/images/6719-google-logo-3-s-.png/></a></li></div><div class="sponsor"><li><a href=https://google.ca target="_blank" title=jacob><img src=http://static.commentcamarche.net/es.kioskea.net/faq/images/6719-google-logo-3-s-.png/></a></li></div><div class="sponsor"><li><a href=https://google.ca target="_blank" title=jacob><img src=http://static.commentcamarche.net/es.kioskea.net/faq/images/6719-google-logo-3-s-.png/></a></li></div></ul></div></div><div id="contact" class="contact full"><div class="wrap"><h1>Connect with us!</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div></div></body></html>
