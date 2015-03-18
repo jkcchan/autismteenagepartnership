@@ -1,10 +1,21 @@
-<!DOCTYPE html><html lang="en"><head><title>Autism Teenage Partnership</title><style>body {
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="/src/ATP---dandelion-0611.png">
+    <title>Autism Teenage Partnership</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <style>body {
   margin: auto; }
 
-h1 {
-  font-family: "Droid Serif"; }
+.content {
+  padding-top: 3em; }
 
-h2, p {
+h1 {
+  font-family: "Raleway"; font-weight:400; margin:auto; font-size:3.5em;}
+h2{
+  font-family:"Raleway";font-weight:300; font-size:2em;
+}
+p,li,aboutp {
   font-family: "Source Sans Pro"; }
 
 .active {
@@ -12,29 +23,43 @@ h2, p {
   background-color: #000000; }
   .active h1 {
     font-size: 12px; }
-
+.left{
+  list-style-type: none;
+  display:inline-block;
+  float:left;
+  margin:0;
+}
+.left img{
+    height:2em;
+    margin-bottom:0.5em;
+    margin-top:0.5em;
+}
 .nav {
+  display: none;
   position: fixed;
   width: 100vw;
   height: 3em;
   border-right: 1px dotted black;
   background-color: #ffffff;
-  border-bottom: 1px solid #000088;
-  display: none; }
+  border-bottom: 1px solid #000088; }
   .nav .links {
     list-style-type: none;
     vertical-align: center;
     display: inline-block;
     float: right;
     padding-right: 2em;
-    margin-bottom: 0.5em; }
+    margin-bottom: 0.5em;}
     .nav .links .jump {
       text-align: none;
       list-style-type: none;
       vertical-align: center;
       display: inline-block;
       padding-left: 2em;
-      padding-right: 2em; }
+      padding-right: 2em;}
+      .nav .links .jump a {
+        text-decoration: none;
+        color: black;
+        vertical-align: center; }
 
 .even {
   background-color: #fafafa; }
@@ -42,22 +67,30 @@ h2, p {
 .wrap {
   opacity: 0;
   width: 80%;
-  margin: auto; }
+  margin: auto;
+  padding-top: 1em; }
 
 .full {
-  padding: 1em;
+  padding-top: 3em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
   border-bottom: 1px dotted black;
   min-height: 90vh; }
 
 .home {
   opacity: 0;
   text-align: center; }
-  .home h1 {
-    margin-top: 30vh; }
+  .home img {
+    margin-top: 10vh;
+    width:70%; }
 
 .about .abouttext {
   padding-left: 3em;
   padding-right: 3em; }
+.about .abouttext li{
+  margin-bottom:1em;
+}
 
 .people {
   list-style-type: none;
@@ -70,15 +103,19 @@ h2, p {
     border: 1px dotted black;
     padding: 1em;
     margin: 1em;
-    text-align: left; }
+    text-align: left; vertical-align: center;}
     .people .person li {
-      padding-left: 7.5em;
+      padding-left: 6.5em;
       text-align: left; }
   .people img {
     float: left;
     position: left;
-    height: 5.5em;
+/*    height: 5.5em;*/
     width: 5.5em; }
+.people h2{
+  margin-top:0em;
+  margin-bottom:0.5em;
+}
 
 .sponsors .sponsorslist {
   list-style-type: none;
@@ -90,14 +127,217 @@ h2, p {
     display: inline-block;
     padding: 1em;
     margin: 1em; }
-    .sponsors .sponsorslist .sponsor img {
-      width: 15em;
-      height: 10em; }
+.navb{
+  list-style-type: none;
+  display:inline-block;
+}
+
+.faq ul {
+  list-style-type: none; }
+.faq li questiontext {
+  font-size: 2em; }
+.faq li answer {
+  font-size: 1em; }
 
 .contact {
   text-align: center; }
   .contact h1 {
     margin-top: 30vh; }
+  .contact .button {
+    margin: 1em;
+    background-color: #fff;
+    padding: 0.5em; }
 
-/*# sourceMappingURL=atp.css.map */
-</style><link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic|Source+Sans+Pro' rel='stylesheet' type='text/css'><script src="https://code.jquery.com/jquery-1.11.2.min.js"></script><script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script><script src="main.js"></script></head><body><div class="nav"><ul class="links"><div class="jump"><li><a href=#home>#home</a></li></div><div class="jump"><li><a href=#about>#about</a></li></div><div class="jump"><li><a href=#leadership>#leadership</a></li></div><div class="jump"><li><a href=#sponsors>#sponsors</a></li></div><div class="jump"><li><a href=#contact>#contact</a></li></div></ul></div><div id="home" class="home full"><h1>Autism Teenage Partnership</h1><aboutp>Scroll down for more info!</aboutp></div><div id="about" class="about even full"><div class="wrap"><h1>About us</h1><div class="abouttext"><h2>Initiative</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p><h2>History</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p><h2>Mission & Vision</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. .</p></div></div></div><div id="leadership" class="leadership full"><div class="wrap"><h1>Leadership</h1><ul class="people"><div class="person"><h2>Jacob Chan, Candidate for BASc</h2><a href="https://linkedin.com/in/jacobchan5" target="_blank" title="Jacob Chan's Linkedin Profile"><img src="http://images.eonline.com/resize/66/66/eol_images/Entire_Site/20090501/300.cera.michael.050109.jpg"/></a><li><p>Position: Web Developer</p></li><li><p>Interests: cats Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p></li></div><div class="person"><h2>Jacob Chan, Candidate for BASc</h2><a href="https://linkedin.com/in/jacobchan5" target="_blank" title="Jacob Chan's Linkedin Profile"><img src="http://personalbranding101.com/wp-content/themes/thesis_18/thesis_18/lib/scripts/thumb.php?src=http%3A%2F%2Fpersonalbranding101.com%2Fwp-content%2Fuploads%2F2012%2F03%2FRon-Swanson-and-Productivity.jpg&amp;w=66&amp;h=66&amp;zc=1&amp;q=100"/></a><li><p>Position: Web Developer</p></li><li><p>Interests: cats Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p></li></div><div class="person"><h2>Jacob Chan, Candidate for BASc</h2><a href="https://linkedin.com/in/jacobchan5" target="_blank" title="Jacob Chan's Linkedin Profile"><img src="http://cdn.hoopshype.com/img/t/p/60x60/316/24838521.jpg"/></a><li><p>Position: Web Developer</p></li><li><p>Interests: cats Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p></li></div><div class="person"><h2>Jacob Chan, Candidate for BASc</h2><a href="https://linkedin.com/in/jacobchan5" target="_blank" title="Jacob Chan's Linkedin Profile"><img src="http://cdn.hoopshype.com/img/t/p/60x60/316/24838521.jpg"/></a><li><p>Position: Web Developer</p></li><li><p>Interests: cats Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p></li></div></ul></div></div><div id="sponsors" class="sponsors even full"><div class="wrap"><h1>Sponsors</h1><ul class="sponsorslist"><div class="sponsor"><li><a href=https://google.ca target="_blank" title=jacob><img src=http://static.commentcamarche.net/es.kioskea.net/faq/images/6719-google-logo-3-s-.png/></a></li></div><div class="sponsor"><li><a href=https://google.ca target="_blank" title=jacob><img src=http://static.commentcamarche.net/es.kioskea.net/faq/images/6719-google-logo-3-s-.png/></a></li></div><div class="sponsor"><li><a href=https://google.ca target="_blank" title=jacob><img src=http://static.commentcamarche.net/es.kioskea.net/faq/images/6719-google-logo-3-s-.png/></a></li></div><div class="sponsor"><li><a href=https://google.ca target="_blank" title=jacob><img src=http://static.commentcamarche.net/es.kioskea.net/faq/images/6719-google-logo-3-s-.png/></a></li></div><div class="sponsor"><li><a href=https://google.ca target="_blank" title=jacob><img src=http://static.commentcamarche.net/es.kioskea.net/faq/images/6719-google-logo-3-s-.png/></a></li></div><div class="sponsor"><li><a href=https://google.ca target="_blank" title=jacob><img src=http://static.commentcamarche.net/es.kioskea.net/faq/images/6719-google-logo-3-s-.png/></a></li></div></ul></div></div><div id="contact" class="contact full"><div class="wrap"><h1>Connect with us!</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div></div></body></html>
+
+
+    </style>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic|Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="nav">
+          <ul class="left">
+            <li><a href="#home"><img src="/src/ATP - dandelion-061.png"/></a></li>
+          </ul>
+          <ul class="links" >
+            <li class="jump"><a class="jumplink" href="#about">About</a></li>
+            <li class="jump"><a class="jumplink" href="#leadership">Leadership</a></li>
+            <li class="jump"><a class="jumplink" href="#sponsors">Sponsors</a></li>
+            <li class="jump"><a class="jumplink" href="#faq">FAQ</a></li>
+            <li class="jump"><a class="jumplink" href="#contact">Contact</a></li>
+          </ul>
+    </div>
+    <div class="content">
+      <div id="home" class="home full">
+        <img src="/src/ATP logo-051.jpg"/><br/>
+        <aboutp>Scroll down for more info!</aboutp>
+      </div>
+      <div id="about" class="about even full">
+        <div class="wrap">
+          <h1>About us</h1>
+          <div class="abouttext">
+            <h2>Initiative</h2>
+            <p>Autism Teenage Partnership (ATP) is an initiative dedicated to providing accessible, free, and safe spaces for teens diagnosed with Autism Spectrum Disorder (ASD) to express themselves through games, crafts, and team-building activities. Individuals with ASD have deficits in communication and are at greater risk for social isolation and mental health issues due to declining services targeting their age range in the community. As students with siblings diagnosed with ASD, we understand this personal struggle and aim to support individuals with ASD and their families by delivering weekly social programming tailored to their unique needs. </p>
+            <p>Autism Teenage Partnership currently runs every Wednesday nights from 6-8pm at Milliken Park Community Recreation Centre, located at the south-east corner of McCowan Road and Steeles Avenue E.</p>
+            <h2>History</h2>
+            <p>The Autism Awareness initiative was started as a university club at Western University by Janson Chan and his best friend, Brandon Wildfong. The club became known as Autism Awareness at Western (AAW) and worked closely with Autism Ontario, London Chapter to host events such as Teen Night.  Autism Awareness at Western (AAW) continues to run today with over 120 members supporting the surrounding community to raise autism awareness. </p>
+            <p>Due to the success of the program and its benefit to the London community,  Janson was inspired to begin an autism awareness initiative in the GTA once he returned to began his studies at York University. He became involved with YorkU's Agent's of Change Program, which provided him with the initial tools and resources to establish an Autism Awareness program at York University (AAY). </p>
+            <p>We launched AAY as Autism Teenage Partnership in the summer of 2014 and have reached out to over 25 participants in the local GTA and neighbouring Markham area. Our program only continues to grow with widespread success and continued support networks for teens with ASD and their families.</p>                        
+            <h2>Mission</h2>
+            <p>Autism Teenage Partnership aims to positively impact the lives of individuals diagnosed with autism and their families through:</p>
+            <ol>
+              <li>Fostering the development of social skills and friendships to enhance the quality of life for our participants and allow for easy integration into society through creation of inclusive environments and strong social support networks. </li>
+              <li>Work with local agencies in the surrounding community to develop relationships, raise awareness and understanding of Autism Spectrum Disorders and fight the associated stigma through educational initiatives.</li>
+              <li>Develop toolkits incorporating our protocols and programming for other underserved regions in Ontario to initiate their very own ATP chapters in their local community.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <script>
+      var app = angular.module('sampleApp', []);
+    app.controller('SampleCtrl', function($scope){
+      $scope.people = [
+      {
+        'firstName':"Janson", 
+        "lastName":"Chan", 
+        "degrees":"BMSc",
+        'position':'Founder, President of ATP',
+        'info':'Janson is currently attending York University for nursing, after completing his BMSc in Biochemistry of Infection and Immunity at Western University in 2013. His inspiration for his work in autism comes from growing up with a brother with ASD, and witnessing the challenges and sacrifices that he and his family has undergone to live seemingly normal lives. As a student representative for his provincial nursing organization at YorkU, he has been invited to speak as a keynote and host multiple workshops discussing ATP at various Canadian Nursing Student Association National and Regional Conferences.',
+        'imgsrc':"/src/janson 2.jpg",
+        'linkedin':'https://www.linkedin.com/in/jansonchan'
+      },
+      {
+        'firstName':"Brandon", 
+        "lastName":"Wildfong", 
+        "degrees":"BSc",
+        'position':'Co-founder & Vice President of Operations',
+        'info':'Brandon has recently graduated from Western University, with a B.Sc in Physiology and Psychology. Along with Janson, they pioneered Autism Awareness clubs at Western, which have inspired similar initiatives at several campuses. Since then, he has helped build ATP from its conception, and quickly realized the benefits of these social programs, and the need within the community.',
+        'imgsrc':"/src/brandon 2.jpg",
+        'linkedin':'https://www.linkedin.com/pub/brandon-wildfong/a8/228/793?trk=pub-pbmap'
+      },
+      {
+        'firstName':"Jillian", 
+        "lastName":"Ferreira", 
+        "degrees":"BSc",
+        'position':'Director of Public Relations',
+        'info':'attending York University  for Nursing. Having grown up with a sister diagnosed with autism, it became difficult for her to watch her sister struggle with school and be judged by others. She wanted to take on the responsibility for caring for her, and others in a similar situation, which is why she became, involved in ATP.',
+        'imgsrc':"/src/jillian.jpg",
+        'linkedin':'https://www.linkedin.com/pub/jillian-ferreira/b0/a82/639'
+      },
+      {
+        'firstName':"Mamta", 
+        "lastName":"Prajapati", 
+        "degrees":"BSc",
+        'position':'Program Director ',
+        'info':'Mamta is a recent graduate from the University of Toronto with a Specialist degree in Psychology and a Minor in French. She is currently pursuing a post-grad diploma in Behavioral Science Technology at George Brown. Growing up with a younger sister with cerebral palsy has given her appreciation for advocating for vulnerable populations. Since then, she has had numerous volunteer and work related experiences within the autism field and works as a respite worker for families with autism. She is able to bring her valuable experience and knowledge to the programming at ATP.',
+        'imgsrc':"/src/mamta (2).jpg",
+        'linkedin':'http://ca.linkedin.com/pub/mamta-prajapati/93/a94/567'
+      },
+      {
+        'firstName':"Cindy", 
+        "lastName":"Troung", 
+        "degrees":"BSc",
+        'position':'Director of Human Resources',
+        'info':'Cindy graduated with her Bachelor of Science in Nursing from Ryerson University. She has maintained an active and passionate role as a volunteer within our program, earning her the title of Director of Human Resources.',
+        'imgsrc':"/src/cindy.jpg",
+        'linkedin':''
+      },
+      {
+        'firstName':"Shehan", 
+        "lastName":"Ragavan", 
+        "degrees":"BSc",
+        'position':'Director of Finance',
+        'info':"Shehan graduated from Queen's University with his B.Sc in Genetics.  He is one of our behind the scenes member but actively engages with our participants and program every week!",
+        'imgsrc':"/src/shehan.jpg",
+        'linkedin':''
+      }];
+    });
+
+</script>
+      <div id="leadership" class="leadership full" ng-app="sampleApp">
+        <div class="wrap">
+          <h1>Leadership</h1>
+          <ul class="people" ng-controller="SampleCtrl">
+            <div class="person" ng-repeat="person in people">
+              <h2>{{person.firstName+" "+person.lastName}}, {{person.degrees}}</h2><a ng-href="{{person.linkedin}}" target="_blank" ng-attr-title="{{person.firstName+' '+person.lastName}}'s Linkedin Profile"><img ng-src="{{person.imgsrc}}"/></a>
+              <li>
+                <p>Position: {{person.position}}</p>
+              </li>
+              <li>
+                <p>{{person.info}}</p>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+      <div id="sponsors" class="sponsors even full">
+        <div class="wrap">
+          <h1>Sponsors</h1>
+          <ul class="sponsorslist">
+            <div class="sponsor">
+              <li><p><strong>York University - Faculty of Health</strong></p><a href="http://health.info.yorku.ca/" target="_blank" title="York University - Faculty of Health"><img src="/src/york.jpg"/></a>
+                <p>Agents of Change: <a href="http://stong.yorku.ca/agents-of-change/">http://stong.yorku.ca/agents-of-change/</a></p>
+                <p>The Agents of Change program associated with YorkU's Faculty of Health has provided the initial platform for ATP to launch with access to funding, blog websites, engagement opportunities, and media opportunities such as connections for a feature on Maclean's Magazine.  Additionally, ATP collaborates with a mentor and advisor, Dr. Jonathan Weiss, who is a Clinical Psychologist and Associate Professor, and currently sits as the CIHR Chair in Autism Spectrum Disorders Treatment and Care Research at York University.</p>
+              </li>
+            </div>
+            <div class="sponsor">
+              <li><p><strong>RNAO Region 7</strong></p><a href="http://chapters.rnao.ca/toronto-east" target="_blank" title="RNAO Region 7"><img src="/src/rnao.jpg"/></a>
+                <p>As nursing students we found it important to connect with our professional association, the Registered Nurses Association of Ontario (RNAO), who has provided funding and exposure through media releases and speaking engagements at regional and national conferences.</p>
+              </li>
+            </div>
+            <div class="sponsor">
+              <li><p><strong>Milliken Park Advisory Council</strong></p>
+                <p>This council is a community association in the GTA associated with the community centre that hosts ATP. They have generously provided funding in-kind services, such as access to the venue, equipment, and exposure through media releases. </p>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+      <div id="faq" class="faq full">
+        <div class="wrap" >
+          <h1>Frequently Asked Questions</h1>
+          <ul>
+            <li>
+              <h2 class="questiontext">Where are you located?</h2>
+              <p class="answer">Autism Teenage Partnership is held at Milliken Park Community Recreation Centre which is located at the south-east corner of McCowan Road and Steeles Avenue. Address: 4325 McCowan Rd, Scarborough, ON M1V 4P1</p>
+            </li>
+            <li>
+              <h2 class="questiontext">When do you run your program?</h2>
+              <p class="answer">Our program is held year round every Wednesdays nights from 6pm to 8pm.</p>
+            </li>
+            <li>
+              <h2 class="questiontext">What are the current services you offer?</h2>
+              <p class="answer">Currently Autism Teenage Partnership offers weekly social programming for teens with ASD such as board games, crafts, and team-building activities co-ordinated by our program director. We are still in the process of working towards providing field trips and excursions.</p>
+            </li>
+            <li>
+              <h2 class="questiontext">What ages do you serve?</h2>
+              <p class="answer">Our participants vary in age from 14 years to 25 years old. However, Autism Teenage Partnership is open to individuals of all ages. </p>
+            </li>
+            <li>
+              <h2 class="questiontext">Do I have to pay for your program?</h2>
+              <p class="answer">No. Our program is provided to individuals and their families free of charge.</p>
+            </li>
+            <li>
+              <h2 class="questiontext">Do you have any volunteering opportunities?</h2>
+              <p class="answer">Yes.  We collaborate with fellow university students to deliver our weekly social programming and engage with our participants. All volunteers are required to have a police check prior to beginning their volunteer position with us, which will be reimbursed. For further volunteer inquiries you may contact Brandon Wildfong at <a href="mailto:autsimteenagepartnership@gmail.com">autsimteenagepartnership@gmail.com"</a></p>
+            </li>
+            <li>
+              <h2 class="questiontext">How are you funded?</h2>
+              <p class="answer">Autism Teenage Partnership is largely funded by Milliken Park Advisory Council, the Registered Nurses Association of Ontario-Region 7 and York University.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="contact" class="contact full even">
+        <div class="wrap">
+          <h1>Connect with us!</h1>
+          <p>If you have any further questions or concerns feel free to contact us at: <a href="mailto:autsimteenagepartnership@gmail.com">autsimteenagepartnership@gmail.com</a></p>
+          <p>Subscribe to our <a href="http://eepurl.com/bgY0F1">newsletter!</a></p>
+          <p>Sign up for ATP <a href="https://atp.typeform.com/to/VuQVgO">here!</a></p>
+          <p>Check us out on <a href="#">Facebook!</a></p>
+      </div>
+    </div>
+  </body>
+</html>

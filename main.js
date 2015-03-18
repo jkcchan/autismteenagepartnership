@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
 	//$(".wrap").fadeIn("slow");
 	$(".home").animate({'opacity':'1'},500);
@@ -6,12 +7,17 @@ $(document).ready(function(){
 	var divsnum = 4;
 	for (i=0; i<divsnum; i++){
 		posdiv[i]=$(divs[i]).offset().top;
+		//window.alert(posdiv[i]);
 	}
+
 	$(window).scroll(function(){
 
 		var currentPos = $(window).scrollTop();
-		if (currentPos - posdiv[0] <=100){
-			$(".nav").slideDown("fast");
+		var difference = currentPos - posdiv[0];
+		//window.alert(difference);
+		//navbar show on scroll down 100
+		if (difference >=-300){
+			$(".nav").slideDown("150");
 		}
 		$(".wrap").each(function(){
 			var offsets=$(this).offset().top;
@@ -35,4 +41,7 @@ $(document).ready(function(){
 		// }
 		
 	});
+	// $(".jumplink").click(function(){
+	// 	$(".nav").slideUp("fast");
+	// });
 });
